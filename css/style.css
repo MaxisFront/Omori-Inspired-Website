@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background: #1F2937;
+  color: white;
+  font-family: Roboto;
+}
+
+img {
+  max-width: 70%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  width: 10rem;
+  padding: 0.5rem 1rem;
+  background: #3882F6;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2% 12%;
+}
+
+.header__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__company-name {
+  font-size: 1.5rem;
+}
+
+.header__links {
+  display: flex;
+  gap: 1.5rem;
+  color: #E5E7EB
+}
+
+.header__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__resources {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.header__title {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.header__image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+
+  .header__content {
+    gap: 2rem;
+  }
+
+  .header__items, .header__main {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .header__resources {
+    align-items: center;
+  }
+  
+  .header__title {
+    text-align: center;
+  }
+  .header__image {
+    justify-content: center;
+  }
+}
