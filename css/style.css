@@ -9,7 +9,7 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100dvh;
+  height: 100dvh;
   overflow-x: hidden;
   background: #1A1A1A;
   font-family: Roboto;
@@ -41,6 +41,20 @@ ul {
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+/* General */
+
+.button {
+  width: 10rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.75rem;
   color: white;
 }
 
@@ -87,22 +101,12 @@ a {
 }
 
 .header__button {
-  width: 10rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 8px;
   background: #AD2A2A;
-  transition-duration: 0.3s;
-  cursor: pointer;
-  text-align: center;
-  font-size: 0.75rem;
-  color: white;
 }
 
 .header__button:hover {
   background: #801D1D;
 }
-
 
 .header__image {
   display: flex;
@@ -130,18 +134,18 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 70%;
   gap: 1rem;
   padding: 1rem;
-  width: 70%;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 30rem;
   gap: 1rem;
   flex: 1 1 10rem;
-  max-width: 30rem;
 }
 
 .card__image {
@@ -169,9 +173,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  width: 55%;
   gap: 1.5rem;
   padding: 2rem 0;
-  width: 70%;
 }
 
 .quote__text {
@@ -184,6 +188,51 @@ a {
   font-weight: 700;
   text-align: right;
   color: #111717;
+}
+
+/* Body: Register box */
+
+.register__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  margin: 4rem 0;
+  padding: 2rem 0;
+  background: #AD2A2A;
+}
+
+.register__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 75%;
+  gap: 1rem;
+}
+
+.register__main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.register__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.register__text {
+  font-size: 1rem;
+}
+
+.register__button {
+  border: 2px solid #ffff;
+  background: #AD2A2A;
+}
+
+.register__button:hover {
+  background: #801D1D;
 }
 
 @media (max-width: 768px) {
@@ -210,7 +259,30 @@ a {
   }
 
   /* Body Media Queries CSS */
+
+  /* Quotes */
   .quote__content {
     width: 80%;
+  }
+  
+  .quote__text {
+    text-align: center;
+  }
+  
+  /* Register */
+  .register__title, .register__text {
+    text-align: center;
+  }
+
+  .register__main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .register__content {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
   }
 }
