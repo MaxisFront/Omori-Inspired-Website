@@ -9,7 +9,7 @@
 body {
   display: flex;
   flex-direction: column;
-  height: 100dvh;
+  min-height: 100dvh;
   overflow-x: hidden;
   background: #1A1A1A;
   font-family: Roboto;
@@ -26,6 +26,15 @@ main {
   display: flex;
   justify-content: center;
   color: #F9FaF8;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 0;
+  background: #1F2937;
+  color: #ffff;
 }
 
 img {
